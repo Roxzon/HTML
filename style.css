@@ -1,0 +1,75 @@
+/*Cambiamos la fuente desde google fonts*/
+html {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+/*Reseteamos la etiqueta de body*/
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #364552;
+    color: white;
+    /*rem son medidas relativas dependiendo del tamaño de la fuente HTML*/
+    padding: 3rem 2rem; 
+}
+
+header h1 {
+    font-size: 4rem; /*Vendria siendo 4x16*/
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto; /*Con esto centramos*/
+
+}
+
+section article {
+    /*Podemos animar todas las propiedas en lugar de poner
+    box-shadow se coloca all*/
+    /*se anima solo box-shadow, luego el tiempo que tomara la 
+    transision, luego el algoritmo para acelerar y desacelerar
+    la animación*/
+    transition: box-shadow 0.3s ease;
+    background-color: #ffff;
+    margin: 1rem 0; /* 1 rem vertical y un 0 horizontal*/
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+/*Sombra en una tabla del blog*/
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+section article h2, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color:#fff;
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue; 
+}

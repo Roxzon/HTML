@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 500px;">
+        <thead>
+        <!--Fila dentro de la tabla-->
+        <tr>
+            <!--Titulo de una columna de la tabla-->
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Definir elementos estandar dentro de la tabla-->
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Spotify</td>
+                <td>$139</td>
+            </tr>
+            <tr>
+                <td>YouTube Music</td>
+                <td>$119</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: $258</td>
+        </tfoot>
+    </table>
+
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-roman;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!--form es para formularios-->
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input value="campoNombre" type="text" id="nombre" name="nombre" placeholder="Nombre...">
+        <br>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="campoApellido" type="text" id="apellido" name="apellido" placeholder="apellido...">
+        <br>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
+        <br>
+        <br>
+        <!--Se recomienda el uso de button por ser más editable que el resto-->
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+        <input type="submit"/>
+    </form>
+    
+    <!--Tipos de encabezados en HTML-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi primer heading</h2>
+    <h3>Mi primer heading</h3>
+    <h4>Mi primer heading</h4>
+    <h5>Mi primer heading</h5>
+    <h6>Mi primer heading</h6>
+
+    <!--Parrafos-->
+    <p>Esto seria un parrafo</p>
+    <p>Esto de aqui, seria otro parrafo</p>
+    <hr>
+    <h2>Segunda parte de pagina</h2>
+    <p>
+        Este texto es <span style="color:blue">mucho más largo</span>
+        y es para mostrar <br>
+        la etiqueta de span
+    </p>
+    <!--Esto es un comentario
+    que puede ser de multilinea
+    o de una sola linea-->
+    <a href="https://www.google.com.mx">Ir a google</a>
+    <a target="_blank" href="https://www.google.com.mx">Ir a google abriendo otra pestaña</a>
+    <br>
+    <img src="img/1234567.png" width="400"/>
+</body>
+</html>
